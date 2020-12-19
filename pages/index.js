@@ -27,7 +27,6 @@ export default function Home() {
       const qrScanner = new QrScanner(videoRef.current, (result) => {
         setResult(result);
         qrScanner.stop();
-        alert("???");
         clearInterval(id);
       });
       setResult("Looking for results");
