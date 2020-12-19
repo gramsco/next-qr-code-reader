@@ -39,7 +39,14 @@ export default function Home() {
   }
 
   return (
-    <div className={styles.container}>
+    <div
+      style={{
+        width: "100vw",
+        display: "grid",
+        placeItems: "center",
+        textAlign: "center",
+      }}
+    >
       <h1>QR Code Reader</h1>
       <h2>{result}</h2>
       <button onClick={launchQR}>Launch</button>
